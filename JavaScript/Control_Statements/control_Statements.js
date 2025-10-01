@@ -71,3 +71,27 @@ console.log("It is a positive number")
 }
 
 
+//  switch
+
+// switch(variable){
+// case 1:
+// stmt
+// case 2:
+// stmt
+// case3:
+// stmt
+// default:
+// stmt
+
+
+var fruit = 'mango'
+switch(fruit){
+    case 'apple':
+        console.log("This is a apple fruit")
+        break
+    case 'mango':
+        console.log("This is a mango fruit")
+        break
+    default:
+        console.log("this is not a fruit")
+}
