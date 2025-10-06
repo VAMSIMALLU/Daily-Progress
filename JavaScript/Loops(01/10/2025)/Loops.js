@@ -94,9 +94,38 @@
 
 
 // condition true
-var b = 5
-do{
-    console.log(b)
-    b++
+// var b = 5
+// do{
+//     console.log(b)
+//     b++
+// }
+// while(b<20)
+
+
+
+// Infinite Loop
+// never ending loop
+// condition always true
+
+var a = 2;
+
+for(a;a>1;a++){
+    console.log(a)
 }
-while(b<20)
+
+
+// var c = 2
+// while(c>1){
+//     console.log(c)
+//     c++
+// }
+
+
+// var d = 2
+// do{
+//     console.log(d)
+//     d++
+// }
+// while(d>1)
+    
+
