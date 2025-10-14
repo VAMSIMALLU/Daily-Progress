@@ -156,8 +156,61 @@ counter();
 // Scope
 // Accessibility and lifetime of that variable
 
-// i)Global Scope
-// var
+// let var const
 
-// ii)Block Scope
-// let, const
+
+
+// var a = 10
+// var b = 20
+// let c = 30
+// const d = 40
+// // global scope
+// function sum(){
+//     // block scope
+//     a = 30
+//     c = 60
+//     console.log(a,b,a+b)
+//     console.log(c,d,c+d)
+// }
+// console.log(a,b)
+// console.log(c,d)
+
+// sum()
+// console.log(a,b)
+// console.log(c,d)
+
+
+// // 
+// let e = 10
+// // global scope
+// function sum(){
+//     // block scope
+//     {
+//         let e = 1
+//         let f = 2
+//         console.log(e,f)
+//     }
+//     console.log(e)
+// }
+
+// sum()
+
+let e = 10;
+const f = 20;
+// global scope
+
+function sum() {
+    // local scope
+    let g = 30
+    {
+        // block scope
+        let e = 1;
+        let f = 2;
+        console.log(e, f);
+    }
+    console.log(e,f);
+    console.log(g);
+    
+}
+
+sum();
