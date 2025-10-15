@@ -204,8 +204,8 @@ function sum() {
     let g = 30
     {
         // block scope
-        let e = 1;
-        let f = 2;
+        let e = 1; 
+        let f = 2; 
         console.log(e, f);
     }
     console.log(e,f);
@@ -214,3 +214,17 @@ function sum() {
 }
 
 sum();
+
+
+
+//               scope                Hoisting                             Intialisation    
+// var -->      functional              yes                                 no needed
+// let -->      block                   yes(but differently)                no needed       
+// const -->      block                  if they are not stored in script    needed
+//                                      they may support hoisting
+
+
+//           TDZ(Temporary Dead Zone)
+// var          it didn't goes
+// let          it goes
+// const        it goes
