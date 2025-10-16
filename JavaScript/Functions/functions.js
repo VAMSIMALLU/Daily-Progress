@@ -225,6 +225,25 @@ sum();
 
 
 //           TDZ(Temporary Dead Zone)
-// var          it didn't goes
+// var           it didn't goes
 // let          it goes
 // const        it goes
+
+
+
+function outerFunction() {
+  let count=0;
+
+  function innerFunction() {
+    count++;
+    console.log(count)
+  }
+
+  return innerFunction;
+}
+
+const os = outerFunction(); 
+os(); 
+os();
+os();
+
